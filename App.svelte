@@ -6,7 +6,7 @@
   import Button from "./Button.svelte";
   let queue = [];
   let show = false;
-  let stats = { correct: 0, incorrect: 0, skipped: 0 };
+  let stats = { correct: 0, incorrect: 0, skipped: 0, total: 0 };
 
   onMount(() => {
     restart();
@@ -31,15 +31,19 @@
   };
 
   const restart = () => {
-    stats = { correct: 0, incorrect: 0, skipped: 0 };
+    const questions = getQuestions();
+    stats = { correct: 0, incorrect: 0, skipped: 0, total: questions.length };
     show = false;
     flipped = false;
-    queue = [...getQuestions()].sort(() => (Math.random() < 0.5 ? -1 : 1));
+    queue = questions.sort(() => (Math.random() < 0.5 ? -1 : 1));
 
     setTimeout(() => {
       show = true;
     }, 250);
   };
+
+  $: progress =
+    ((stats.correct + stats.incorrect + stats.skipped) / stats.total) * 100;
 </script>
 
 <style>
@@ -106,5 +110,5 @@
 </main>
 
 {#if queue.length}
-<small>Progress: {100 - queue.length}%</small>
+<small>Progress: {Math.round(progress)}%</small>
 {/if}
