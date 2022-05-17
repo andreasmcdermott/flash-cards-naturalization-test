@@ -44,7 +44,7 @@ export const getQuestions = () =>
     },
     {
       text: "Where is the Statue of Liberty?",
-      answers: ["New York", "Libery Island"]
+      answers: ["New York", "Liberty Island"]
     }
   ].map((q) => ({
     ...q,
