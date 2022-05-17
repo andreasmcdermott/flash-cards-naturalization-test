@@ -13,7 +13,7 @@ export const getQuestions = () =>
       answers: ["Atlantic Ocean"]
     },
     {
-      text: "Name on US territory",
+      text: "Name one US territory",
       answers: ["Puerto Rico", "Guam", "American Samoa", "US Virgin Islands"]
     },
     {
