@@ -42,7 +42,7 @@ export const getQuestions = () =>
     },
     {
       text:
-        "What major event happened on Septembmer 11, 2001 in the United States?",
+        "What major event happened on September 11, 2001 in the United States?",
       answers: ["Terrorists attacked the United States"]
     },
     {
