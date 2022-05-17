@@ -76,7 +76,7 @@ export const getQuestions = () =>
       answers: ["Joe Biden", "Joseph Robinette Biden Jr"]
     },
     {
-      text: "Whaty is the name of the Vice President of the United States now?",
+      text: "What is the name of the Vice President of the United States now?",
       answers: ["Kamala Harris"]
     },
     {
