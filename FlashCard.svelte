@@ -125,7 +125,7 @@
 <script>
   import { createEventDispatcher, beforeUpdate } from "svelte";
   import Button from "./Button.svelte";
-  import { fly } from "svelte/transition";
+  import { fly, fade } from "svelte/transition";
 
   export let question;
   export let flipped;
@@ -149,7 +149,7 @@
   };
 </script>
 
-<div class="card" class:flipped transition:fly={{x: 100}}>
+<div class="card" class:flipped in:fly={{x: 100}} out:fade>
   <div class="shadow front" />
   <div class="shadow back" />
   
