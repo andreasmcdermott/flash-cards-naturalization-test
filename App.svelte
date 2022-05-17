@@ -19,9 +19,12 @@
   };
 
   const next = ({ detail: { correct } }) => {
-    if (correct) stats.correct++;
-    if (correct === false) stats.incorrect++;
-    if (correct === null) stats.skipped++;
+    stats = {
+      ...stats,
+      ...(correct === true ? { correct: stats.correct + 1 } : {}),
+      ...(correct === false ? { incorrect: stats.incorrect + 1 } : {}),
+      ...(correct === null ? { skipped: stats.skipped + 1 } : {})
+    };
     flipped = false;
     show = false;
     queue.shift();
@@ -41,6 +44,10 @@
       show = true;
     }, 250);
   };
+
+  $: {
+    console.log(stats.correct, stats.incorrect, stats.skipped);
+  }
 
   $: progress =
     ((stats.correct + stats.incorrect + stats.skipped) / stats.total) * 100;

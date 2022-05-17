@@ -1,4 +1,3 @@
-import { get } from "svelte/store";
 import { getQuestions as getAgA } from "./ag-a";
 import { getQuestions as getAgB } from "./ag-b";
 import { getQuestions as getAgC } from "./ag-c";
