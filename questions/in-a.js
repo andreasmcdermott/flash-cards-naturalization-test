@@ -43,7 +43,7 @@ export const getQuestions = () =>
       answers: ["Washington DC"]
     },
     {
-      text: "Where is the Statue of Lberty?",
+      text: "Where is the Statue of Liberty?",
       answers: ["New York", "Libery Island"]
     }
   ].map((q) => ({
