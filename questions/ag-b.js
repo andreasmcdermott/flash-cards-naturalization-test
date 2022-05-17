@@ -1,7 +1,7 @@
 export const getQuestions = () =>
   [
     {
-      text: "Name one branch of part of the government",
+      text: "Name one branch or part of the government",
       answers: [
         "Congress",
         "Legislative",
