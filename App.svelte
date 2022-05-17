@@ -85,10 +85,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 0 #ddd;
   }
 
-  .done > * + * {
+  .done h4 {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .done p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .done .button-container {
     margin-top: 1rem;
+  }
+
+  .done p strong {
+    flex: none;
+    margin-right: 1rem;
   }
 
   small {
@@ -105,17 +128,15 @@
   <FlashCard question={queue[0]} {flipped} on:next-question={next} on:flip={flip} />
 {:else if !queue.length}
   <div class="done" in:fade>
-    <strong>Done!</strong>
-    <p>
-      <strong>Correct Answers:</strong> {stats.correct}<br />
-      <strong>Incorrect Answers:</strong> {stats.incorrect}<br />
-      <strong>Skipped Answers:</strong> {stats.skipped}
-    </p>
-    <Button on:click={restart}>Restart</Button>
+    <h4>Done!</h4>
+    <p><strong>Correct Answers:</strong><span>{stats.correct}</span></p>
+    <p><strong>Incorrect Answers:</strong><span>{stats.incorrect}</span></p>
+    <p><strong>Skipped Answers:</strong><span>{stats.skipped}</span></p>
+    <div class="button-container"><Button on:click={restart}>Restart</Button></div>
   </div>
 {/if}
 </main>
 
 {#if queue.length}
-<small>Progress: {Math.round(progress)}%</small>
+  <small>Progress: {Math.round(progress)}%</small>
 {/if}
