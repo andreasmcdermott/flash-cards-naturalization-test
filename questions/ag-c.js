@@ -58,7 +58,7 @@ export const getQuestions = () =>
     },
     {
       text: "When must all men register for the Selective Service?",
-      answers: ["At age 8", "between 18 and 26"]
+      answers: ["At age 18", "between 18 and 26"]
     }
   ].map((q) => ({
     ...q,
