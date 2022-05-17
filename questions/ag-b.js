@@ -110,7 +110,6 @@ export const getQuestions = () =>
         "Secretary of Agriculture",
         "Secretary of Commerce",
         "Secretary of Defense",
-        "Secretary of Defense",
         "Secretary of Education",
         "Secretary of Energy",
         "Secretery of Health and Human Services",
@@ -192,5 +191,5 @@ export const getQuestions = () =>
   ].map((q) => ({
     ...q,
     category: "American Government",
-    subcategory: "B: Systen of Government"
+    subcategory: "B: System of Government"
   }));
