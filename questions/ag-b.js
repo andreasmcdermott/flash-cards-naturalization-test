@@ -41,7 +41,7 @@ export const getQuestions = () =>
     },
     {
       text: "Who is one of your state's US Senators now?",
-      answers: ["Jeff Wilson", "Claire Wilson", "Lynda Wilson"]
+      answers: ["Maria Cantwell", "Patty Murray"]
     },
     {
       text: "The House of Representatives has how many voting members?",
