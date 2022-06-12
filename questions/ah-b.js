@@ -11,7 +11,8 @@ export const getQuestions = () =>
         "Mexican-American war",
         "Civil War",
         "Spanish-American war"
-      ]
+      ],
+      prio: 2
     },
     {
       text: "Name the US war between the North and the South",
@@ -31,7 +32,8 @@ export const getQuestions = () =>
     },
     {
       text: "What did Susan B Anthony do?",
-      answers: ["Fought for women's rights"]
+      answers: ["Fought for women's rights"],
+      prio: 2
     }
   ].map((q) => ({
     ...q,

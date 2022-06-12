@@ -38,7 +38,14 @@
     stats = { correct: 0, incorrect: 0, skipped: 0, total: questions.length };
     show = false;
     flipped = false;
-    queue = questions.sort(() => (Math.random() < 0.5 ? -1 : 1));
+    queue = questions
+      .sort(() => (Math.random() < 0.5 ? -1 : 1))
+      .sort((a, b) => {
+        if (!a.prio && !b.prio) return 0;
+        if (!a.prio) return 1;
+        if (!b.prio) return -1;
+        return a.prio - b.prio;
+      });
 
     setTimeout(() => {
       show = true;

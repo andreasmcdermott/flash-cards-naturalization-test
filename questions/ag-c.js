@@ -8,16 +8,19 @@ export const getQuestions = () =>
         "You don't have to pay a poll tax to vote",
         "Any citizen can vote (men and women)",
         "A male citizen of any race can vote"
-      ]
+      ],
+      prio: 1
     },
     {
       text:
         "What is one responsibility that is only for United States citizens?",
-      answers: ["Serve on a jury", "Vote in federal elections"]
+      answers: ["Serve on a jury", "Vote in federal elections"],
+      prio: 1
     },
     {
       text: "Name one right only for United State citizens",
-      answers: ["Vote in federal elections", "Run for federal office"]
+      answers: ["Vote in federal elections", "Run for federal office"],
+      prio: 1
     },
     {
       text: "What are two rights of everyone living in the United States?",
@@ -28,7 +31,8 @@ export const getQuestions = () =>
         "Freedom to petition the government",
         "Freedom of religion",
         "The right to bear arms"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "What do we show loyalty to when we say the Pledge of Allegiance?",
@@ -41,16 +45,19 @@ export const getQuestions = () =>
         "Obey the laws of the United States",
         "Be loyal to the United States",
         "Give up loyalty to other countries"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "How old do citizens have to be to vote for President?",
-      answers: ["18 or older"]
+      answers: ["18 or older"],
+      prio: 1
     },
     {
       text:
         "What are two ways that Americans can participate in their democracy?",
-      answers: ["Vote", "Join a political party", "Run for office"]
+      answers: ["Vote", "Join a political party", "Run for office"],
+      prio: 1
     },
     {
       text: "When is the last day you can send in federal income tax forms?",

@@ -9,7 +9,8 @@ export const getQuestions = () =>
         "Executive",
         "The Courts",
         "Judicial"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "What stops one branch of government from becoming too powerful?",
@@ -25,35 +26,43 @@ export const getQuestions = () =>
         "Congress",
         "Senate and House of Representatives",
         "U.S. or national legislature"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "What are the two parts of the US Congress",
-      answers: ["the Senate and the House of Represenatives"]
+      answers: ["the Senate and the House of Represenatives"],
+      prio: 1
     },
     {
       text: "How many US senators are there?",
-      answers: ["100"]
+      answers: ["100"],
+      prio: 1
     },
     {
       text: "We elect a US Senator for how many years?",
-      answers: ["6"]
+      answers: ["6"],
+      prio: 1
     },
     {
       text: "Who is one of your state's US Senators now?",
-      answers: ["Maria Cantwell", "Patty Murray"]
+      answers: ["Maria Cantwell", "Patty Murray"],
+      prio: 1
     },
     {
       text: "The House of Representatives has how many voting members?",
-      answers: ["435"]
+      answers: ["435"],
+      prio: 1
     },
     {
       text: "We elect a US representative for how many years?",
-      answers: ["2"]
+      answers: ["2"],
+      prio: 1
     },
     {
       text: "Name your US Representative",
-      answers: ["Pramila Jayapal"]
+      answers: ["Pramila Jayapal"],
+      prio: 1
     },
     {
       text: "Who does a US Senator represent?",
@@ -123,7 +132,8 @@ export const getQuestions = () =>
         "Secretary of Veterans Affairs",
         "Attorney General",
         "Vice President"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "What does the judicial branch do?",
@@ -132,7 +142,8 @@ export const getQuestions = () =>
         "Explains laws",
         "Resolves disputes",
         "Decides ifa law goes against the Constitution"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "What is the highest court in the United States?",
@@ -140,11 +151,13 @@ export const getQuestions = () =>
     },
     {
       text: "How many justices are on the Supreme Court?",
-      answers: ["9"]
+      answers: ["9"],
+      prio: 1
     },
     {
       text: "Who is the Chief Justice of the United States now?",
-      answers: ["John G. Roberts"]
+      answers: ["John G. Roberts"],
+      prio: 1
     },
     {
       text:
@@ -154,7 +167,8 @@ export const getQuestions = () =>
         "to declare war",
         "to create an army",
         "to make treaties"
-      ]
+      ],
+      prio: 1
     },
     {
       text:
@@ -165,11 +179,13 @@ export const getQuestions = () =>
         "provide safety (fire departments)",
         "Give a driver's license",
         "Approve zoning and land use"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "Who is the governor of your state now?",
-      answers: ["Jay Inslee"]
+      answers: ["Jay Inslee"],
+      prio: 1
     },
     {
       text: "What is the capital of your state?",

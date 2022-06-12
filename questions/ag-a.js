@@ -6,12 +6,14 @@ export const getQuestions = () =>
     },
     {
       text: "What does the constitution do?",
-      answers: ["Defines the Government", "Protects basic rights of Americans"]
+      answers: ["Defines the Government", "Protects basic rights of Americans"],
+      prio: 1
     },
     {
       text:
         "The idea of self-government is in the first three words of the Constitution. What are these words?",
-      answers: ["We the People"]
+      answers: ["We the People"],
+      prio: 1
     },
     {
       text: "What is an amendment?",
@@ -22,7 +24,8 @@ export const getQuestions = () =>
     },
     {
       text: "What do we call the first ten amendments to the Consitution",
-      answers: ["the Bill of Rights"]
+      answers: ["the Bill of Rights"],
+      prio: 1
     },
     {
       text: "What is one right or freedom from the first Amendment",
@@ -32,11 +35,13 @@ export const getQuestions = () =>
         "Assembly",
         "Press",
         "Petition the government"
-      ]
+      ],
+      prio: 1
     },
     {
       text: "How many amendments does the Constitution have?",
-      answers: ["27"]
+      answers: ["27"],
+      prio: 1
     },
     {
       text: "What did the Declaration of Independence do?",
@@ -44,7 +49,8 @@ export const getQuestions = () =>
     },
     {
       text: "What are two rights in the Declaration of Independence?",
-      answers: ["Life", "Liberty", "Pursuit of Happiness"]
+      answers: ["Life", "Liberty", "Pursuit of Happiness"],
+      prio: 1
     },
     {
       text: "What is freedom of Religion?",
@@ -61,7 +67,8 @@ export const getQuestions = () =>
         "Leaders must obey the law",
         "Government must obey the law",
         "No one is above the law"
-      ]
+      ],
+      prio: 1
     }
   ].map((q) => ({
     ...q,

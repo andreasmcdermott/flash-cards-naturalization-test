@@ -12,15 +12,18 @@ export const getQuestions = () =>
     },
     {
       text: "Who was President during World War I?",
-      answers: ["Woodrow Wilson"]
+      answers: ["Woodrow Wilson"],
+      prio: 2
     },
     {
       text: "Who was President during the Great Depression and World War II?",
-      answers: ["Franklin Roosevelt"]
+      answers: ["Franklin Roosevelt"],
+      prio: 2
     },
     {
       text: "Who did the United States fight in World War II?",
-      answers: ["Japan, Germany, and Italy"]
+      answers: ["Japan, Germany, and Italy"],
+      prio: 2
     },
     {
       text:
